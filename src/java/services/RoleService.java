@@ -5,9 +5,9 @@ import java.util.List;
 import models.Role;
 
 public class RoleService {
-    public List<Role> getAll(int roleID) throws Exception {
+    public List<Role> getAll() throws Exception {
         RoleDB roleDB = new RoleDB();
-        List<Role> roles = roleDB.getAll(roleID);
+        List<Role> roles = roleDB.getAll();
         return roles;
     }
 }

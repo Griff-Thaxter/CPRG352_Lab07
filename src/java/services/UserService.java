@@ -11,19 +11,19 @@ public class UserService {
         return user;
     }
     
-    public List<User> getAll(String email) throws Exception {
+    public List<User> getAll() throws Exception {
         UserDB userDB = new UserDB();
-        List<User> users = userDB.getAll(email);
+        List<User> users = userDB.getAll();
         return users;
     }
     
-    public void insert(boolean active, String firstName, String lastName, String password, String role) throws Exception {
-        User user = new User(null, active, firstName, lastName, password, role);
+    public void insert(String email, boolean active, String firstName, String lastName, String password, int role) throws Exception {
+        User user = new User(email, active, firstName, lastName, password, role);
         UserDB userDB = new UserDB();
         userDB.insert(user);
     }
     
-    public void update(String email, boolean active, String firstName, String lastName, String password, String role) throws Exception {
+    public void update(String email, boolean active, String firstName, String lastName, String password, int role) throws Exception {
         User user = new User(email, active, firstName, lastName, password, role);
         UserDB userDB = new UserDB();
         userDB.update(user);
