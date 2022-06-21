@@ -1,0 +1,45 @@
+html {
+    background-color: blue;
+    color: white
+}
+
+.addBox {
+    float: left;
+    width: 250px;
+    margin-left: 25px;
+}
+
+.editBox {
+    float: right;
+    width: 150px;
+    margin-right: 1400px;
+}
+
+.manageBox {
+    width: 800px;
+    float: left;
+    margin-left: 0px;
+}
+
+a {
+    color: orange;
+}
+
+a:visited {
+    color: purple;
+}
+
+table, th, td{
+    border: 5px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    width: 10%;
+}
+
+

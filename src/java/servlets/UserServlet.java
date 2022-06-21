@@ -69,15 +69,15 @@ public class UserServlet extends HttpServlet {
                     roleName = request.getParameter("addRole");
                     
                     switch(roleName) {
-                        case "System Admin":
+                        case "system admin":
                             roleID = 1;
                             break;
                             
-                        case "Regular User":
+                        case "regular user":
                             roleID = 2;
                             break;
                             
-                        case "Company Admin":
+                        case "company admin":
                             roleID = 3;
                             break;
                     }
@@ -98,15 +98,15 @@ public class UserServlet extends HttpServlet {
                     roleName = request.getParameter("editEmail");
                     
                     switch(roleName) {
-                        case "System Admin":
+                        case "system admin":
                             roleID = 1;
                             break;
                             
-                        case "Regular User":
+                        case "regular user":
                             roleID = 2;
                             break;
                         
-                        case "Company Admin":
+                        case "company admin":
                             roleID = 3;
                             break;
                     }
